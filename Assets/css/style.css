@@ -52,8 +52,8 @@ nav {
 }
 
 .pricelist {
-    height: 1024px;
-    background:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.595), rgb(0, 0, 0)) 
+    height: 900px;
+    background:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.595), rgb(0, 0, 0)), url('../Pictures/backgroundPriceList.svg') 
 }
 .title {
     display: flex;
@@ -62,13 +62,20 @@ nav {
     background: none;
     border: none;
 }
-
+.contact {
+    height: 1024px;
+    background:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.595), rgb(0, 0, 0)), url('../Pictures/backgroundPriceList.svg') 
+}
 /* Card Pricelist */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
 .card-container {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    
 }
 
 .card {
@@ -77,13 +84,38 @@ nav {
     border: 1px solid #ccc;
     border-radius: 5px;
     min-width: 300px;
-    color: black;
+    color: white;
+    background-color: #171515;
+    /* transform: translateX(-490px); */
+    transition: 0.3s all ease-in-out;
 }
 .card img {
     display: block;
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card2 {
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    color: white;
+    background-color: #171515;
+    transition: 0.3s all ease-in-out;
+}
+.card2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.card2 p {
+    font-size: 13px;
 }
 /* End Card Pricelist */
 
@@ -106,12 +138,12 @@ nav {
     }
     .carousel-item {
         height: 200px;
-        
         border-radius: 20px;
     }
     .carousel-item img {
         object-fit: cover;
         height: 200px;
         border-radius: 20px;
+        border: 2px solid white;
     }
 }
