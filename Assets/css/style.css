@@ -4,6 +4,19 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
+    background: #666;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #232323;
+}
+
 body {
     color: white;
 }
@@ -76,7 +89,6 @@ nav {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    
 }
 
 .card {
@@ -148,6 +160,97 @@ nav {
     transform: translateY(-10px);
 }
 
+.hidden {
+    display: none;
+  }
+
+.active {
+    background: #B1B1B1;
+    color: black;
+    font-weight: bold;
+}
+.card-body {
+    height: 541px;
+    background: #B1B1B1;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.input-form input{
+    padding: 10px;
+    width: 600px;
+    height: 54px;
+    background: #B1B1B1;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+input[type='text']:focus {
+    background: #B1B1B1;
+    border: 2px solid white;
+    color: white;
+}
+
+textarea {
+    background: #B1B1B1;
+    background: #B1B1B1;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+.submit {
+    text-align: center;
+}
+.submit button {
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background: #D90000;
+    color: white;
+    font-weight: bold;
+}
+
+.lokasi {
+    padding: 0px;
+    overflow: hidden;
+}
+.lokasi iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.testing {
+    border: 1px solid red;
+}
+
+#faq {
+    height: 541px;
+    /* background: url("../Pictures/gmailBackground.svg"); */
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    background-size: cover;
+    /* jng pake padding */
+}
+
+.submit {
+    text-align: center;
+
+}
+.submit-faq button {
+    border: none;
+    margin-top: 395px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background: #D90000;
+    color: white;
+    font-weight: bold;
+    width: 381px;
+    height: 83px;    
+    font-size: 30px;
+}
 
 @media only screen and (max-width: 480px) {
     .text-banner {
@@ -186,5 +289,16 @@ nav {
     }
     .card-contact {
         height: 130px;
+    }
+    .card-body {
+        padding: 10px;
+        height: 581px;
+    }
+    .input-form input {
+        width: 100%;
+    }
+    textarea {
+        height: 100px;
+        width: 100%;
     }
 }
